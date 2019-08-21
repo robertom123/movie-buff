@@ -1,0 +1,79 @@
+/******** Nav Bar *******/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #141414;
+}
+
+.mynavbar{
+    display: flex;
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+    height: 35px;
+}
+
+.trans{
+    background-color: transparent;
+}
+
+.colored {
+    background-color: red;
+}
+
+.logo{
+    padding: 0 8px;
+}
+.left{
+    padding: 12px 15px 0 0;
+}
+
+.search{
+    margin-left: auto;
+    padding-top: 5px;
+   
+}
+
+input{
+    display: block;
+    margin: 0 0 0 auto;
+    width: 50px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #141414;;
+    background-image: url('/images/icons/search-icon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+input:focus{
+    width: 270px;
+    outline: none;
+    border: 1px solid #ffffff;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/*links */
+
+.logo{
+    
+}
+
+a{
+    text-decoration: none;
+    color: white; 
+}
+
+
+/****Discover section *****/
+#discover{
+    padding-top: 60px;
+}
