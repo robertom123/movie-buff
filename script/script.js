@@ -1,8 +1,9 @@
 /*Transparent background to color */
-let navbar = document.getElementById('navbar');
-window.onscroll = () => {
-    'use strict';
-    if(document.body.scrollTop >= 200){
+
+
+window.addEventListener('scroll', () =>{
+    let navbar = document.getElementById('navbar');
+    if(document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight){
         navbar.classList.add('colored');
         navbar.classList.remove('trans');
     }
@@ -11,7 +12,7 @@ window.onscroll = () => {
         navbar.classList.remove('colored');
        
     }
-}
+})
 
 
 

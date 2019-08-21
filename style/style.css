@@ -18,10 +18,14 @@ body{
 
 .trans{
     background-color: transparent;
+    -webkit-transition: 2.0s;
+    transition: 2.0s;
 }
 
 .colored {
-    background-color: red;
+    background-color: #141414;
+    -webkit-transition: 2.0s;
+    transition: 2.0s;
 }
 
 .logo{
@@ -63,17 +67,18 @@ input:focus{
 
 /*links */
 
-.logo{
-    
-}
-
 a{
     text-decoration: none;
-    color: white; 
+    color: #e5e5e5; 
 }
 
 
-/****Discover section *****/
+/********* Discover section ***********/
+.row-title{
+    color:white;
+    padding-top: 100px;
+}
+
 #discover{
     padding-top: 60px;
 }
