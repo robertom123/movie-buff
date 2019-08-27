@@ -79,6 +79,28 @@ a{
     padding-top: 100px;
 }
 
+.row-content{
+    display: flex;
+    color:white;
+    overflow-x: auto; 
+
+ 
+
+}
+.row-content::-webkit-scrollbar{
+    display: none;
+}
+
+
+.row-imgs{
+top: 50%;
+}
+
 #discover{
     padding-top: 60px;
+}
+
+.btn{
+
+
 }
