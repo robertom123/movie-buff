@@ -74,6 +74,7 @@ a{
 
 
 /********* Discover section ***********/
+
 .row-title{
     color:white;
     padding-top: 100px;
@@ -91,7 +92,9 @@ a{
     display: none;
 }
 
-
+/*give this better name later
+for li elements 
+*/
 .row-imgs{
 top: 50%;
 }
@@ -100,7 +103,22 @@ top: 50%;
     padding-top: 60px;
 }
 
-.btn{
+.btn2{
+    display: flex;
+    
 
+}
 
+/*hover effect*/
+
+li {
+    transition: transform .2s;
+    
+}
+
+li:hover{
+    width: 350px;
+    height: 350px;
+    transform: scale(1.3);
+    padding-top: 40px;
 }

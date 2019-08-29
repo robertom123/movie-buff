@@ -37,16 +37,20 @@ fetch(url4)
                     let row_content = document.getElementById('row-content');
                     console.log(item.title);
                     let poster_path = item.poster_path;
-                    let img_path = 'http://image.tmdb.org/t/p/w185/' + poster_path;
+                    let img_path = 'http://image.tmdb.org/t/p/w154/' + poster_path;
+
                    
                     console.log(img_path);
                     console.log(poster_path);
 
                     let li = document.createElement('li');
                     li.className = 'row-imgs';
+
                     let img = document.createElement('img');
                     img.setAttribute('src', img_path);
                     //li.textContent = item.title;
+
+
                     li.appendChild(img);
                     row_content.appendChild(li);
                     console.log(li);
