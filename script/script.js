@@ -34,17 +34,22 @@ fetch(url4)
             res.json().then(data => {
                 console.log(data);
                 data.results.forEach(item => {
+                    
                     let row_content = document.getElementById('row-content');
+                    let info = document.getElementById('info');
+                    let h3 = document.createElement('h3');
+
                     console.log(item.title);
+
                     let poster_path = item.poster_path;
                     let img_path = 'http://image.tmdb.org/t/p/w154/' + poster_path;
 
-                   
-                    console.log(img_path);
-                    console.log(poster_path);
 
                     let li = document.createElement('li');
                     li.className = 'row-imgs';
+
+                    //display info on movie
+                   
 
                     let img = document.createElement('img');
                     img.setAttribute('src', img_path);
@@ -54,6 +59,18 @@ fetch(url4)
                     li.appendChild(img);
                     row_content.appendChild(li);
                     console.log(li);
+
+                    li.addEventListener('click', ()=> {
+                        info.style.display = 'block';
+                        
+                        info.textContent = item.title;
+                        //fix this issue ********
+                        let test = JSON.stringify(item.popularity);
+                        h3.textContent = 'hello';
+                        console.log(typeof(test));
+
+                        info.appendChild('h3');
+                    })
 
                     
                 })
@@ -80,6 +97,9 @@ fetch(url4)
            
         }
     })
+
+
+    //scrll left and right
 
     const left = document.getElementById('test-btn');
     const right = document.getElementById('test-btn2');
