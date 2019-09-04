@@ -42,7 +42,7 @@ fetch(url4)
                     console.log(item.title);
 
                     let poster_path = item.poster_path;
-                    let img_path = 'http://image.tmdb.org/t/p/w154/' + poster_path;
+                    let img_path = 'https://image.tmdb.org/t/p/w154/' + poster_path;
 
 
                     let li = document.createElement('li');
