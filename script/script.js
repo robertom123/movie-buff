@@ -37,7 +37,7 @@ fetch(url4)
                     
                     let row_content = document.getElementById('row-content');
                     let info = document.getElementById('info');
-                    let h3 = document.createElement('h3');
+                    
 
                     console.log(item.title);
 
@@ -61,20 +61,62 @@ fetch(url4)
                     console.log(li);
 
                     li.addEventListener('click', ()=> {
-                        info.style.display = 'block';
-                        
-                        info.textContent = item.title;
-                        //fix this issue ********
-                        let test = JSON.stringify(item.popularity);
-                        h3.textContent = 'hello';
-                        console.log(typeof(test));
+                        let test = document.createElement('div');
 
-                        info.appendChild('h3');
-                    })
+                        let h3 = document.createElement('h3');
+                        let h4 = document.createElement('h4');
+                        let p = document.createElement('p');
+                        let pop = document.createElement('h3');
+                        let mylist = document.createElement('button');
+                        let thumbUp = document.createElement('button');
+                        let thumbDown = document.createElement('button');
+                        info.style.display = 'block';
+
+                        
+                        //info.textContent = item.title;
+                        //fix this issue ********
+                        let movieTitle = JSON.stringify(item.title);
+                        let dateTitle = JSON.stringify(item.release_date);
+                        let descTitle = JSON.stringify(item.overview);
+                        let popularity = JSON.stringify(item.popularity);
+
+                        h3.textContent = movieTitle;
+                        h4.textContent = dateTitle;
+                        p.textContent = descTitle;
+                        pop.textContent = popularity;
+                        mylist.textContent = 'My List';
+                        thumbUp.textContent = 'up';
+                        thumbDown.textContent = 'down';
+                        console.log(typeof (popularity));
+
+                     /*  info.appendChild(h3);
+                       info.appendChild(h4);
+                       info.appendChild(p);
+                       info.appendChild(pop);
+                       info.appendChild(mylist);
+                       info.appendChild(thumbUp);
+                       info.appendChild(thumbDown);
+
+                       */
+
+                       test.appendChild(h3);
+                       test.appendChild(h4);
+                       test.appendChild(p);
+                       test.appendChild(pop);
+                       test.appendChild(mylist);
+                       test.appendChild(thumbUp);
+                       test.appendChild(thumbDown);
+                       info.appendChild(test);
+
+                       test.previousSibling.style.display = 'none';
+                       
+                       
+                    });
+                    
 
                     
-                })
-            })
+                });
+            });
 
                 /*
                 let div = document.getElementById('test');
