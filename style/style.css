@@ -14,6 +14,7 @@ body{
     position: fixed;
     width: 100%;
     height: 35px;
+    
 }
 
 .trans{
@@ -94,6 +95,7 @@ a{
 
 /*give this better name later
 for li elements 
+btn for left and right here
 */
 .row-imgs{
 top: 50%;
@@ -103,20 +105,23 @@ top: 50%;
     padding-top: 60px;
 }
 
-.btn2{
-    display: flex;
+.btn-right{
+    float: right;
+}
+.btn-center{
+    position: relative;
+    top: 120px;
     
-
 }
 
 /*hover effect*/
 
-li {
+.row-imgs {
     transition: transform .2s;
     
 }
 
-li:hover{
+.row-imgs:hover{
     width: 350px;
     height: 350px;
     transform: scale(1.3);
@@ -128,4 +133,8 @@ li:hover{
 
 .info  {
     color: white;
+}
+
+.test{
+    
 }
